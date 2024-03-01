@@ -1,0 +1,129 @@
+.title {
+   margin: 0 0 0 2vw;
+   font-weight: 700;
+   font-size: 1.7rem;
+   color: #101213;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+.gadget-grid-container {
+   margin: 0vh 5vw 10vh 5vw;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(2fr, 1fr));
+   grid-gap: 2vw;
+   width: 60%;
+}
+a.g-item {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   gap: 1rem;
+   padding: 1rem;
+   background-color: rgba(255, 255, 255, 0.5);
+   color: #082465;
+   text-decoration: none;
+   font-size: 1rem;
+   border-radius: 15px;
+   box-shadow: 0px 0px 5px 0px rgba(160, 160, 160, 1);
+}
+a.g-item:hover {
+   background-color: #79a1ff6c;
+   transition: 1.1s;
+}
+.gadget-name {
+   font-size: 30px;
+}
+.gadget-price {
+   font-size: 20px;
+   padding: 10px 0 0 0;
+}
+img.gadget-img {
+   padding: 10px;
+   height: 150px;
+   width: 150px;
+}
+img.ratingstar3 {
+   margin: 10px 30px 0px 70px;
+   width: 20%;
+   height: 30%;
+   border-radius: 30px;
+}
+i .fa-solid fa-star {
+   background-color: darkgoldenrod;
+   color: darkgoldenrod;
+}
+/* filter */
+#gadget-category {
+   height: auto;
+   width: 15%;
+   margin: 0.5rem 0.3rem;
+   background-color: hsla(300, 20%, 3%, 0.323);
+   color: black;
+   display: inline;
+   position: fixed;
+   top: 4.9rem;
+   right: 0;
+}
+
+.category-item {
+   margin: 10px 0 10px 0;
+   display: flex;
+   align-items: center;
+   padding: 0 10px 0 10px;
+   text-decoration: none;
+   color: black;
+   cursor: pointer;
+}
+#filtericon {
+   font-size: 35px;
+   margin: 1.5rem;
+}
+.category-item i {
+   font-size: 30px;
+   padding: 0 1rem 0 auto;
+   margin: 5px;
+}
+.p-range {
+   display: flex;
+   place-content: center;
+   margin: 1rem;
+   gap: 1rem;
+}
+.pricerange1 {
+   height: auto;
+   width: 6rem;
+}
+
+/* pagination */
+.pagination {
+   margin: 20px auto;
+   text-align: center;
+}
+
+.pagination .page-link {
+   display: inline-block;
+   padding: 8px 16px;
+   text-decoration: none;
+   color: #010300;
+   border: 1px solid #ddd;
+   border-radius: 25px;
+   margin-right: 4px;
+}
+
+.pagination .page-link.active {
+   background-color: #333;
+   color: #fff;
+}
+
+.pagination .page-link:hover {
+   background-color: #333;
+   color: #fff;
+}
+
+.pagination .page-link:first-child {
+   margin-left: 0;
+}
+
+.pagination .page-link:last-child {
+   margin-right: 0;
+}

@@ -1,0 +1,288 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+:root {
+   --bgcolor: antiquewhite;
+   --color: #333;
+}
+html {
+   scroll-behavior: smooth;
+}
+body {
+   width: 100%;
+   background-color: var(--bgcolor);
+   position: relative;
+}
+img {
+   height: 100px;
+   width: 120px;
+   margin-right: 15px;
+}
+nav {
+   background-color: rgb(1, 2, 2);
+   position: fixed;
+   width: 18%;
+   height: 120vh;
+   display: flex;
+   flex-direction: column;
+}
+nav a {
+   display: block;
+   padding: 16px 20px;
+   border-bottom: 1px solid white;
+   text-align: left;
+   color: #fff;
+   text-decoration: none;
+   font-size: x-large;
+}
+nav a:hover {
+   color: var(--color);
+   background-color: var(--bgcolor);
+}
+nav header:hover a {
+   background-color: transparent;
+}
+nav li {
+   list-style: none;
+   border-top: 2px solid #333;
+}
+nav li a:hover,
+nav li a.active {
+   color: var(--color);
+   background-color: var(--bgcolor);
+}
+nav li a.active::after,
+nav li a:hover::after {
+   content: "";
+   width: 30%;
+   height: 2px;
+   background-color: var(--bgcolor);
+   position: absolute;
+   bottom: -4px;
+   left: 35px;
+}
+a.logout {
+   text-decoration: none;
+   font-size: 20px;
+   margin: 200px 0 0 30px;
+   width: 30%;
+   background-color: var(--bgcolor);
+   padding: 10px;
+   border-radius: 15px;
+   color: var(--color);
+}
+main {
+   position: absolute;
+   top: 10%;
+   left: 20%;
+}
+.head {
+   text-align: end;
+   padding: 50px 80px 0 0;
+   font-size: 25px;
+}
+.grid-container {
+   margin: 10vh 7vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 67vw;
+}
+a.count-item {
+   text-decoration: none;
+   color: black;
+   margin: 20vh 5vw;
+   padding: 10px;
+   border-radius: 25px;
+   align-items: center;
+   border: black solid 1px;
+   cursor: pointer;
+}
+i .fa-solid {
+   padding: 5px;
+   color: var(--color);
+}
+.data {
+   height: 100%;
+   width: 110%;
+   margin: 10px;
+   padding: 25px;
+   background-color: rgba(211, 227, 215, 0.728);
+   border-radius: 10px;
+}
+h1 {
+   text-align: left;
+   text-transform: capitalize;
+   margin: 25px;
+}
+table {
+   background-color: #fff;
+   margin: 1rem;
+   border-collapse: collapse;
+   border-radius: 10px;
+}
+table th {
+   text-align: center;
+   color: rgb(230, 236, 236);
+   background-color: var(--color);
+   font-size: 26px;
+   padding: 10px;
+   width: 5%;
+}
+table td,
+table td a {
+   text-decoration: none;
+   padding: 5px 0;
+   text-align: center;
+   font-size: 25px;
+}
+.update {
+   display: inline;
+   background-color: greenyellow;
+   color: var(--color);
+   padding: 10px;
+   margin: 5px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+.delete {
+   display: inline;
+   background-color: rgb(244, 44, 4);
+   color: rgb(251, 249, 249);
+   padding: 10px;
+   margin: 5px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+#add-update {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.updatebox,
+.add {
+   background-color: rgba(155, 182, 168, 0.559);
+   display: grid;
+   justify-content: space-between;
+   margin: 30px;
+   padding: 20px;
+   border: black solid 1px;
+   box-shadow: 10px 10px rgb(121, 139, 104);
+   border-radius: 15px;
+}
+h1.addtitle,
+h1.updatetitle {
+   margin: 12px;
+   text-align: center;
+}
+.box-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.con {
+   display: block;
+   width: 100%;
+}
+#g_id {
+   width: 23%;
+   padding: 7.5px;
+   margin: 5px;
+   border-radius: 10px;
+}
+.select-container {
+   display: flex;
+   align-items: start;
+   justify-content: space-between;
+}
+select#type,
+select#category,
+select#pricerange {
+   padding: 5px;
+   margin: 5px 50px 0 5px;
+}
+input#gname,
+input#glink.link,
+input#gprice.price {
+   width: 50%;
+   margin: 10px 0;
+   padding: 5px;
+   border-radius: 5px;
+   background-color: rgb(217, 236, 236);
+}
+input#imageone.image,
+input#gimage.image,
+input#imagetwo.image,
+input#rating.rating {
+   width: 75%;
+   margin: 5px 0;
+   border-radius: 5px;
+}
+textarea#gdis,
+textarea#gspecification,
+textarea#gcomprasion {
+   font-size: 15px;
+   background-color: rgb(217, 232, 232);
+   color: var(--color);
+   border-radius: 12px;
+   margin: 10px 0 10px 0;
+   padding: 5px;
+}
+input#submit.submit,
+input#update-submit.submit {
+   width: 20%;
+   height: 30px;
+   box-shadow: 2px 2px 2px gray;
+   background-color: aliceblue;
+   border: none;
+   color: blue;
+}
+
+.table-content {
+   text-align: center;
+   text-transform: capitalize;
+}
+.table-content table {
+   margin: 10px 10px 25px 10px;
+   width: 97%;
+   background-color: #fff;
+   font-size: 20px;
+   text-overflow: clip;
+}
+.table-content table th {
+   padding: 5px;
+   background-color: var(--color);
+   font-size: 25px;
+   color: aliceblue;
+}
+.table-content table td {
+   padding: 5px;
+   font-size: 25px;
+}
+a.add-btn {
+   border: black solid 1px;
+   margin: 100px 10px 10px 10px;
+   padding: 15px;
+   background-color: blue;
+   border-radius: 25px;
+   color: aliceblue;
+   text-decoration: none;
+}
+.top a {
+   height: 50px;
+   width: 50px;
+   position: fixed;
+   bottom: 12px;
+   right: 15px;
+   text-decoration: none;
+   color: var(--color);
+   background-color: #fff;
+   text-align: center;
+   border-radius: 50%;
+}
