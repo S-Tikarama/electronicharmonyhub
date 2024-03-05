@@ -57,11 +57,6 @@ do {
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-   <link rel="manifest" href="favicon/site.webmanifest">
-   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
 
@@ -71,7 +66,7 @@ do {
    <link rel="stylesheet" href="style1.css" />
    <link rel="stylesheet" href="gadget.css">
 
-   <title>GadgetSearch</title>
+   <title>Electronic</title>
    <script src="javascript.js" defer></script>
 
 </head>
@@ -118,16 +113,16 @@ do {
    } else { ?>
       <header>
          <div>
-            <a class="logo" href="user.php"><img src="image/gadget search-logos/logo.png" alt="" /></a>
+            <a class="logo" href="user.php"><img src="image/gadget search-logos/logo.png" alt=""  style="width: 100px; margin-left: 50px"/></a>
          </div>
          <ul class="navbar">
             <li><a class="active" href="user.php">Home</a></li>
-            <li><a href="gadget.php">Gadget</a></li>
+            <li><a href="gadget.php">Electronics</a></li>
             <li><a href="about.php">About Us</a></li>
 
             <form action="search.php" method="post">
                <input type="text" name="search" class="search-bar" placeholder="Search . . . " id="search" />
-               <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            
             </form>
          </ul>
          <button id="modal-btn" class="login-btn"><i class="fa-solid fa-user"></i></button>
@@ -140,7 +135,7 @@ do {
                </div>
                <div class="user-fun">
                   <div class="update-user">
-                     <a href="update.php?id=<?php echo $uid; ?>">update</a>
+                     <a href="update.php?id=<?php echo $uid; ?>">update</<i class="fa-solid fa-right-to-bracket"></i>a>
                   </div>
                   <div class="logout">
                      <a href="logout.php">logout</a>
@@ -153,13 +148,13 @@ do {
          <section id="hero">
             <img src="image/backgrounds/My project.png" alt="" class="background1" />
             <div class="cont-text">
-               <h3>Your search is here</h3>
-               <h1>GadgetSearch</h1>
+               <!-- <h3>Your search is here</h3> -->
+               <h1>Electronic Harmony Hub</h1>
                <p>Make your life easy & happy</p>
             </div>
          </section>
          <section id="slider">
-            <h2 class="product-category">best gadget Deals</h2>
+            <h2 class="product-category">Best Electrons Devices</Details></h2>
             <div class="product-details">
                <div class="pro-container">
                   <?php
@@ -237,28 +232,7 @@ do {
                ?>
             </div>
          </section>
-         <!-- <section class="brands">
-            <h2 class="brand1">Brands</h2>
-            <div class="container-brands">
-               <a href="https://www.acer.com/us-en" target="_blank"><img src="image/brands/Acer.png" alt=""
-                     class="image-brands" /></a>
-               <a href="https://www.apple.com/" target="_blank"><img src="image/brands/APPLE.png" alt=""
-                     class="image-brands" /></a>
-               <a href="https://www.mi.com/np/phone" target="_blank"><img src="image/brands/mi.png" alt=""
-                     class="image-brands" /></a>
-               <a href="https://www.samsung.com/us/" target="_blank"><img src="image/brands/Samsung.png" alt=""
-                     class="image-brands" /></a>
-               <a href="https://www.dell.com/en-us" target="_blank"><img src="image/brands/dell.png" alt=""
-                     class="image-brands" /></a>
-               <a href="https://www.asus.com/np/" target="_blank"><img src="image/brands/asus.png" alt=""
-                     class="image-brands" /></a>
-               <a href="https://www.msi.com/index.php" target="_blank"><img src="image/brands/msi.png" alt=""
-                     class="image-brands" /></a>
-               <a href="https://www.hp.com/us-en/home.html" target="_blank"><img src="image/brands/hp.png" alt=""
-                     class="image-brands" /></a>
-            </div>
-         </section> -->
-      </main>
+              </main>
       <a class="top" href="#">top</a>
       <footer>
          <div class="row">
@@ -270,7 +244,7 @@ do {
                            ,lalitpur</span></a>
                   </li>
                   <li><i class="fa-solid fa-phone"></i><span class="content">01-XXXXX ,(+977)98XXXXXXXX</span></li>
-                  <li><i class="fa-solid fa-envelope"></i><span class="content">gadgetsearch@gmail.com</span></li>
+                  <li><i class="fa-solid fa-envelope"></i><span class="content">electronichub@gmail.com</span></li>
                </ul>
             </div>
             <div class="coln">
@@ -278,6 +252,7 @@ do {
                <ul>
                   <li><a href="about.php">About us</a></li>
                   <li><a href="#">Term & Condition</a></li>
+                  <i class="fa-regular fa-copyright"></i>opyright
                </ul>
             </div>
             <div class="coln">
@@ -290,7 +265,7 @@ do {
                </div>
             </div>
          </div>
-         <center><i class="fa-regular fa-copyright"></i>opyright</center>
+         
       </footer>
    <?php } ?>
 

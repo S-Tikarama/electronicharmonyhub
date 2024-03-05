@@ -127,27 +127,19 @@ if (isset($_POST['update-submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="admin.css" />
 
-    <title>GadgetSearch</title>
+    <title>Electronic</title>
     <script src="javascript.js" defer></script>
 
 </head>
 
 <body>
     <nav>
-        <header><a class="logo" href="admin.php"><img src="image/gadget search-logos/logo.png" alt="" /></a></header>
+        <a class="logo" href="user.php"><img src="image/gadget search-logos/logo.png" alt=""  style="width: 100px; margin-left: 50px"/></a>
         <ul class="navbar">
             <li><a href="admin.php">Dashboard</a></li>
             <li><a href="gadgetdata.php">Gadget data</a></li>
@@ -162,7 +154,7 @@ if (isset($_POST['update-submit'])) {
                 <form action="" method="POST" class="gadget-form">
                     <div class="input-container">
                         <div class="add">
-                            <h1 class="addtitle">ADD GADGET</h1>
+                            <h1 class="addtitle">ADD ITEMS</h1>
                             <input type="number" class="id" name="g_id" id="g_id" placeholder="Gadget ID" required>
                             <div class="select-container">
                                 <select name="type" id="type">
@@ -217,7 +209,7 @@ if (isset($_POST['update-submit'])) {
                 <form action="" method="POST" class="manage-gadget-form">
                     <div class="input-container">
                         <div class="updatebox">
-                            <h1 class="updatetitle">UPDATE Gadgets</h1>
+                            <h1 class="updatetitle">UPDATE ITEMS</h1>
                             <select class="id" name="g_id" id="g_id" onchange="this.form.submit()">
                                 <option value="">Gadget ID</option>
                                 <?php
@@ -269,21 +261,18 @@ if (isset($_POST['update-submit'])) {
                                         value="<?php echo $glink ?>" required><br>
                                     <input type="number" class="price" name="gprice" id="gprice"
                                         placeholder="Gadget Price" value="<?php echo $gprice ?>" required>
-                                </div>
+                            </div>
                             </div>
                             <textarea name="gspecification" id="gspecification" cols="60" rows="7"
                                 placeholder="Gadget Specification" required><?php echo $gspecification ?></textarea>
                             <center>
-                                <input type="submit" class="submit" name="update-submit" id="update-submit"
-                                    value="Update">
+                                <input type="submit" class="submit" name="update-submit" id="update-submit"value="Update">
                             </center>
                         </div>
                     </div>
                 </form>
             </div>
-
         </div>
     </main>
 </body>
-
 </html>

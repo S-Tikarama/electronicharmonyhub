@@ -45,16 +45,8 @@ do {
    <meta charset="UTF-8" />
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <title>GadgetSearch</title>
+   <title>Electronic</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-   <link rel="manifest" href="favicon/site.webmanifest">
-   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-   <meta name="msapplication-TileColor" content="#da532c">
-   <meta name="theme-color" content="#ffffff">
 
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,41 +56,43 @@ do {
 </head>
 
 <body>
-   <header>
-      <div>
-         <a class="logo" href="user.php"><img src="image/gadget search-logos/logo.png" alt="" /></a>
-      </div>
-      <ul class="navbar">
-         <li><a href="user.php">Home</a></li>
-         <li><a href="gadget.php">Gadget</a></li>
-         <li><a class="active" href="about.php">About Us</a></li>
+<header>
+         <div>
+         <a class="logo" href="user.php"><img src="image/gadget search-logos/logo.png" alt=""  style="width: 100px; margin-left: 50px"/></a>         </div>
+         <ul class="navbar">
+            <li><a href="user.php">Home</a></li>
+            <li><a href="gadget.php">Electronics</a></li>
+            <li><a class="active" href="about.php">About Us</a></li>
 
-         <form action="search.php" method="post">
-            <input type="text" name="search" class="search-bar" placeholder="Search . . . " id="search" /><i
-               id="search-icon" class="fa-solid fa-magnifying-glass"></i>
-         </form>
-      </ul>
-      <button id="modal-btn" class="login-btn"><i class="fa-solid fa-user"></i></button>
+            <form action="search.php" method="post">
+               <input type="text" name="search" class="search-bar" placeholder="Search . . . " id="search" />
+            
+            </form>
+         </ul>
+         <button id="modal-btn" class="login-btn"><i class="fa-solid fa-user"></i></button>
 
-      <div id="my-modal" class="modal">
-         <form action="" method="POST" class="login-form">
-            <i id="xmark" class="fa-solid fa-xmark fa-lg"></i>
-            <div id="username" class="container">
-               <?php echo $_SESSION['username'] ?>
-            </div>
-
-
-            <div class="logout">
-               <a href="home.php">logout</a>
-            </div>
-         </form>
-      </div>
-   </header>
+         <div id="my-modal" class="modal">
+            <form action="" method="POST" class="login-form">
+               <i id="xmark" class="fa-solid fa-xmark fa-lg"></i>
+               <div id="username" class="container">
+                  <?php echo $_SESSION['username'] ?>
+               </div>
+               <div class="user-fun">
+                  <div class="update-user">
+                     <a href="update.php?id=<?php echo $uid; ?>">update</a>
+                  </div>
+                  <div class="logout">
+                     <a href="logout.php">logout</a>
+                  </div>
+               </div>
+            </form>
+         </div>
+      </header>
    <main>
       <article class="about-gadgetsearch">
          <section class="about">
-            <h2>gadgetsearch</h2>
-            <p class="information">With the growing number of gadgets in the market people are more confused than ever
+            <h2>Electronic Harmony Hub</h2>
+            <!-- <p class="information">With the growing number of gadgets in the market people are more confused than ever
                about buying new gadgets
                from the market. Many people don't know about the features and functionality of the gadget that they want
                to
@@ -107,7 +101,7 @@ do {
                various
                gadgets such as
                smartphones, laptops, tablets and other tech related devices and provide a clear concept about the gadget
-               they want to purchase. </p>
+               they want to purchase. </p> -->
          </section>
          <section class="map">
             <h1>Location on map</h1>
@@ -127,7 +121,7 @@ do {
                   <i class="fa-solid fa-location-dot"></i><span class="content">Balkumari ,lalitpur</span>
                </li>
                <li><i class="fa-solid fa-phone"></i><span class="content">01-XXXXX ,(+977)98XXXXXXXX</span></li>
-               <li><i class="fa-solid fa-envelope"></i><span class="content">gadgetsearch@gmail.com</span></li>
+               <li><i class="fa-solid fa-envelope"></i><span class="content">electronichub@gmail.com</span></li>
             </ul>
          </div>
          <div class="coln">
@@ -135,6 +129,7 @@ do {
             <ul>
                <li><a href="about.php">About us</a></li>
                <li><a href="#">Term & Condition</a></li>
+               <i class="fa-regular fa-copyright"></i>opyright
             </ul>
          </div>
          <div class="coln">
@@ -147,11 +142,7 @@ do {
             </div>
          </div>
       </div>
-
-      <center><i class="fa-regular fa-copyright"></i>opyright</center>
    </footer>
-
    <script src="javascript.js"></script>
 </body>
-
 </html>

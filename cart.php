@@ -84,7 +84,7 @@
                     <tr>
                     <td class="p-4">
                       <div class="media align-items-center">
-                        <img src="https://bootdey.com/img/Content/avatar/avatar1.png" class="d-block ui-w-40 ui-bordered mr-4" alt="">
+                        <!-- <img src="" class="d-block ui-w-40 ui-bordered mr-4" alt=""> -->
                         <div class="media-body">
                           <a href="#" class="d-block text-dark"><?php echo $product['product_name'] ?></a>
                         </div>
@@ -93,7 +93,7 @@
                     <td class="text-right font-weight-semibold align-middle p-4">Rs.<?php echo $product['amount'] ?></td>
                     <td class="align-middle p-4"><input type="text" class="form-control text-center" value="<?php echo $product['quantity'] ?>"></td>
                     <td class="text-right font-weight-semibold align-middle p-4">Rs.<?php echo $total ?></td>
-                    <td class="text-center align-middle px-0"><a href="#" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
+                    <td class="text-center align-middle px-0"><a href="deletecart.php?id=<?php echo $product['cart_id'] ?>" class="shop-tooltip close float-none text-danger" title="" data-original-title="Remove">×</a></td>
                   </tr>
 
                    <?php } ?>
@@ -120,7 +120,7 @@
             </div>
         
             <div class="float-right">
-              <a href="gadget.php"><button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button></a>
+              <a href="gadget.php"><button type="button" class="btn btn-lg btn-default md-btn-flat mt-2 mr-3">Back to shopping</button>
               <?php if($ftotal != 0){?>
                 <form action = "checkout.php" method="POST">
                     <input type="number" name="amount" id="amount" value="<?php echo $ftotal ?>" hidden>

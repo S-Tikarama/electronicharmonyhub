@@ -35,11 +35,6 @@ if (isset($_POST['login-submit'])) {
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-   <link rel="manifest" href="favicon/site.webmanifest">
-   <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
 
@@ -49,21 +44,21 @@ if (isset($_POST['login-submit'])) {
 
    <link rel="stylesheet" href="style1.css">
 
-   <title>GadgetSearch</title>
+   <title>Electronic</title>
 
 </head>
 
 <body>
    <header>
       <div>
-         <a class="logo" href="home.php"><img src="image/gadget search-logos/logo.png" alt="" /></a>
+      <a class="logo" href="user.php"><img src="image/gadget search-logos/logo.png" alt=""  style="width: 100px; margin-left: 50px"/></a>
       </div>
       <ul class="navbar">
          <li><a class="active" href="home.php">Home</a></li>
-         <li><a href="#" onclick="alertPopup('login first')">Gadget</a></li>
+         <li><a href="#" onclick="alertPopup('login first')">Electronic</a></li>
          <li><a href="#" onclick="alertPopup('login first')">About Us</a></li>
       </ul>
-      <button id="modal-btn" class="login-btn">Login <i class="fa-solid fa-right-to-bracket"></i></button>
+      <button id="modal-btn" class="login-btn">Login </button>
 
       <div id="my-modal" class="modal">
          <form action="" method="POST" class="login-form">
@@ -91,13 +86,13 @@ if (isset($_POST['login-submit'])) {
       <div id="hero">
          <img src="image/backgrounds/My project.png" alt="background image" class="background1" />
          <div class="cont-text">
-            <h3>Your search is here</h3>
-            <h1>gadgetsearch</h1>
+            <!-- <h3>Your search is here</h3> -->
+            <h1>Electronic Harmony Hub</h1>
             <p>make your life easy & happy</p>
          </div>
       </div>
       <section id="slider">
-         <h2 class="product-category">best gadget Deals</h2>
+         <h2 class="product-category">best electronic devices</h2>
          <div class="product-details">
             <div class="pro-container">
                <?php
@@ -120,25 +115,6 @@ if (isset($_POST['login-submit'])) {
 
          </div>
       </section>
-      <section class="brands">
-         <h2 class="brand1">Brands</h2>
-         <div class="container-brands">
-            <a href="https://www.mi.com/np/phone" target="_blank"><img src="image/brands/mi.png" alt=""
-                  class="image-brands" /></a>
-            <a href="https://www.acer.com/us-en" target="_blank"><img src="image/brands/Acer.png" alt=""
-                  class="image-brands" /></a>
-            <a href="https://www.apple.com/" target="_blank"><img src="image/brands/APPLE.png" alt=""
-                  class="image-brands" /></a>
-            <a href="https://www.samsung.com/us/" target="_blank"><img src="image/brands/Samsung.png" alt=""
-                  class="image-brands" /></a>
-            <a href="https://www.dell.com/en-us" target="_blank"><img src="image/brands/dell.png" alt=""
-                  class="image-brands" /></a>
-            <a href="https://www.asus.com/np/" target="_blank"><img src="image/brands/asus.png" alt=""
-                  class="image-brands" /></a>
-            <a href="https://www.msi.com/index.php" target="_blank"><img src="image/brands/msi.png" alt=""
-                  class="image-brands" /></a>
-         </div>
-      </section>
    </main>
    <footer>
       <div class="row">
@@ -149,7 +125,7 @@ if (isset($_POST['login-submit'])) {
                   <i class="fa-solid fa-location-dot"></i><span class="content">Balkumari ,lalitpur</span>
                </li>
                <li><i class="fa-solid fa-phone"></i><span class="content">01-XXXXX ,(+977)98XXXXXXXX</span></li>
-               <li><i class="fa-solid fa-envelope"></i><span class="content">gadgetsearch@gmail.com</span></li>
+               <li><i class="fa-solid fa-envelope"></i><span class="content">electronichub@gmail.com</span></li>
             </ul>
          </div>
          <div class="coln">
@@ -157,6 +133,7 @@ if (isset($_POST['login-submit'])) {
             <ul>
                <li><a href="about.php" onclick="alertPopup()">About us</a></li>
                <li><a href="#" onclick="alertPopup()">Term & Condition</a></li>
+               <i class="fa-regular fa-copyright"></i>opyrigh
             </ul>
          </div>
          <div class="coln">
@@ -168,10 +145,8 @@ if (isset($_POST['login-submit'])) {
             </div>
          </div>
       </div>
-      <center><i class="fa-regular fa-copyright"></i>opyright</center>
-   </footer>
+      </footer>
 
    <script src="javascript.js"></script>
 </body>
-
 </html>

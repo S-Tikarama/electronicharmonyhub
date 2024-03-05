@@ -47,6 +47,9 @@
     <?php 
     echo $status;
     echo "<br>" . $amount/100;
+    echo "<div style='margin-top: 50px'>
+        <a href='user.php'>Back to homepage</a>
+        </div>";
 
      ?>
 </body>
